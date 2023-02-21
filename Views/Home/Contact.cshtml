@@ -1,0 +1,142 @@
+﻿@{
+    ViewData["Title"] = "Contact Us";
+}
+
+
+<div class="page-title-area bg-26" style="max-height: 280px">
+    <div class="container">
+        <div class="page-title-content">
+            <h2>Contact Us</h2>
+            <ul>
+                <li>
+                    <a href="/">
+                        Home
+                    </a>
+                </li>
+                <li class="active">Contact Us</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<section class="contact-info-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="map-area">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.7848766678217!2d144.714901214812!3d-37.818507542086884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad68be0e10008ef%3A0xece63972351ad184!2s37%20Everton%20Rd%2C%20Truganina%20VIC%203029%2C%20Australia!5e0!3m2!1sen!2sin!4v1654346361459!5m2!1sen!2sin"></iframe>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="contact-info">
+                    <h2>Get in touch</h2>
+                    <ul class="address">
+                        <li class="location">
+                            <i class="ri-map-pin-2-fill"></i>
+                            <span>Address</span>
+                            37 Everton Road , Truganina 3029
+                        </li>
+                        <li>
+                            <i class="ri-mail-line"></i>
+                            <span>Email</span>
+                            <a href="/cdn-cgi/l/email-protection#61080f070e210014121513000d080016080504040514020015080e0f4f020e0c4f0014"><span class="__cf_email__" data-cfemail="375e595158775642444345565b5e56405e53525253425456435e58591954585a195642">[email&#160;protected]</span></a>
+                        </li>
+                        <li>
+                            <i class="ri-phone-fill"></i>
+                            <span>Phone</span>
+                            <a href="tel:0433910569">0433910569</a>
+                        </li>
+                    </ul>
+                    <h3>Follow Us</h3>
+                    <ul class="social-link">
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/" target="_blank">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact-area pb-100">
+    <div class="container">
+        <div class="section-title">
+            <h2>Send us a quick message</h2>
+            <p>Send us a message here and we will get back to you asap</p>
+        </div>
+        <form Id="contactForm" action="/ContactUs" method="post">
+            <input name="__RequestVerificationToken" type="hidden" value="faFNZzhV4aK0MSDpYGrTBqMKzMn-swvld_mxNRvSs9TqV65urqswu4tUaTbPCtSLFEZohOyR-KDB52aegl7Mhks1PdIcW_4Dw2Kn9fksMRg1" />
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="FirstName">First Name</label>
+                        <input class="form-control text-box single-line" data-val="true" data-val-maxlength="The field First Name must be a string or array type with a maximum length of &#39;100&#39;." data-val-maxlength-max="100" data-val-required="The First Name field is required." id="FirstName" name="FirstName" type="text" value="" />
+                        <span class="field-validation-valid text-danger" data-valmsg-for="FirstName" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="LastName">Last Name</label>
+                        <input class="form-control text-box single-line" data-val="true" data-val-maxlength="The field Last Name must be a string or array type with a maximum length of &#39;100&#39;." data-val-maxlength-max="100" data-val-required="The Last Name field is required." id="LastName" name="LastName" type="text" value="" />
+                        <span class="field-validation-valid text-danger" data-valmsg-for="LastName" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input class="form-control text-box single-line" data-val="true" data-val-maxlength="The field Email must be a string or array type with a maximum length of &#39;100&#39;." data-val-maxlength-max="100" data-val-required="The Email field is required." id="Email" name="Email" type="text" value="" />
+                        <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="Phone">Phone</label>
+                        <input class="form-control text-box single-line" data-val="true" data-val-regex="Just input a 10-digit number like 98XXXXXXXXXX. No need to add 0, +91 or spaces." data-val-regex-pattern="^([0-9]{10})$" data-val-required="The Phone field is required." id="Phone" name="Phone" type="text" value="" />
+                        <span class="field-validation-valid text-danger" data-valmsg-for="Phone" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="Message">Message</label>
+<textarea class="form-control" cols="20" data-val="true" data-val-required="The Message field is required." id="Message" name="Message" rows="2" style="height:180px;"></textarea>
+                        <span class="field-validation-valid text-danger" data-valmsg-for="Message" data-valmsg-replace="true"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <div class="g-recaptcha" data-sitekey="6Ld5IQgUAAAAAGhx3rqR4-mi8Mw_QU8Iquns7Jtt"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <button style="float:left" type="submit" class="default-btn"><span>Send Message</span></button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
